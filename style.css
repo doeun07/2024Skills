@@ -56,8 +56,41 @@ footer {
     color: white;
     background-color: black;
     height: 100px;
+    margin-top: 80px;
 }
 
 footer .logo {
     filter: grayscale();
 }
+
+/* 메인페이지 -> 비주얼 영역 */
+.slideBox {
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    animation: slideAnimation 12s infinite linear;
+  }
+  
+  @keyframes slideAnimation {
+    0%,
+    24.9% {
+      background-image: url(/img/slide1.png);
+    }
+  
+    25%,
+    49.9% {
+      background-image: url(/img/slide2.png);
+    }
+  
+    50%,
+    74.9% {
+      background-image: url(/img/slide3.png);
+    }
+  
+    75%,
+    100% {
+      background-image: url(/img/slide4.png);
+    }
+  }
+  
