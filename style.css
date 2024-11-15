@@ -8,6 +8,15 @@ body {
     padding-top: 80px;
 }
 
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+}
+
 /* 헤더 */
 .logo {
     width: 150px;
@@ -93,4 +102,46 @@ footer .logo {
       background-image: url(/img/slide4.png);
     }
   }
-  
+
+/* 메인페이지 -> information 영역 */
+.information {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.information_img {
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    background-image: url(./img/main_information.jpg);
+    background-size: 100%;
+}
+
+.information_text {
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.information_text > p {
+    margin: 10px 0;
+}
+
+.information_text > a {
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.information_text > a:hover {
+    color: black;
+    background-color: white;
+
+}
