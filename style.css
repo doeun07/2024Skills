@@ -69,7 +69,7 @@ footer .logo {
     height: 550px;
     margin: 0 auto;
     background-size: 100% 100%;
-    animation: slideAnimation 12s infinite linear;
+    animation: slideAnimation 8s infinite linear;
   }
   
   @keyframes slideAnimation {
