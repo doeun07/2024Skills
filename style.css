@@ -1,147 +1,271 @@
 /* 공통 영역 */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
 .container {
-    width: 1320px;
-    margin: 0 auto;
+  width: 1320px;
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.sub_container {
+  text-align: center;
+  margin-top: 100px;
 }
 
 /* 헤더 */
 .logo {
-    width: 150px;
+  width: 150px;
 }
 
 header {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 80px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-ul, li {
-    list-style: none;
-    display: flex;
+ul,
+li {
+  list-style: none;
+  display: flex;
 }
 
-header li{
-    margin: 20px;
+header li {
+  margin: 20px;
 }
 
-header ul, header span{
-    margin: 10px 20px;
+header ul,
+header span {
+  margin: 10px 20px;
 }
 
 header li:hover {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* 푸터 */
 footer {
-    background-color: gray;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    background-color: black;
-    height: 100px;
-    margin-top: 80px;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 100px;
+  margin-top: 80px;
 }
 
 footer .logo {
-    filter: grayscale();
+  filter: grayscale();
 }
 
 /* 메인페이지 -> 비주얼 영역 */
 .slideBox {
-    width: 1000px;
-    height: 550px;
-    margin: 0 auto;
-    background-size: 100% 100%;
-    animation: slideAnimation 8s infinite linear;
-  }
-  
-  @keyframes slideAnimation {
-    0%,
-    24.9% {
-      background-image: url(/img/slide1.png);
-    }
-  
-    25%,
-    49.9% {
-      background-image: url(/img/slide2.png);
-    }
-  
-    50%,
-    74.9% {
-      background-image: url(/img/slide3.png);
-    }
-  
-    75%,
-    100% {
-      background-image: url(/img/slide4.png);
-    }
-  }
-
-/* 메인페이지 -> information 영역 */
-.information {
-    text-align: center;
-    margin-top: 100px;
+  width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  background-size: 100% 100%;
+  animation: slideAnimation 8s infinite linear;
 }
 
+@keyframes slideAnimation {
+  0%,
+  24.9% {
+    background-image: url(./img/slide1.png);
+  }
+
+  25%,
+  49.9% {
+    background-image: url(./img/slide2.png);
+  }
+
+  50%,
+  74.9% {
+    background-image: url(./img/slide3.png);
+  }
+
+  75%,
+  100% {
+    background-image: url(./img/slide4.png);
+  }
+}
+
+/* 메인페이지 -> information 영역 */
 .information_img {
-    margin: 0 auto;
-    width: 1000px;
-    height: 600px;
-    background-image: url(./img/main_information.jpg);
-    background-size: 100%;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  background-image: url(./img/main_information.jpg);
+  background-size: 100%;
 }
 
 .information_text {
-    width: 1000px;
-    height: 600px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 .information_text > p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .information_text > a {
-    color: white;
-    background-color: black;
-    margin-top: 50px;
-    padding: 10px;
-    border-radius: 10px;
+  color: white;
+  background-color: black;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .information_text > a:hover {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
+}
 
+/* 메인페이지 -> game schedule 영역 */
+.game_schedule > table {
+  margin: 10px auto;
+  width: 80%;
+}
+
+.game_schedule > table th,
+.game_schedule > table td {
+  padding: 10px;
+}
+
+.game_schedule > table th {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.game_schedule > table tr {
+  background-color: #f9f9f9;
+}
+
+.game_schedule > table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.game_schedule > table td[colspan="5"] {
+  color: gray;
+  font-style: italic;
+}
+
+.today {
+  color: red;
+}
+
+/* 모달 영역 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.modal-toggle:checked ~ .modal {
+  display: flex;
+  animation: fadeIn 0.5s ease;
+}
+
+.modal_content {
+  width: 500px;
+  height: 460px;
+  background-color: white;
+  margin: 50px auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.modal_head {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid gray;
+}
+
+.modal_body {
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid gray;
+}
+
+.modal_content img {
+  width: 300px;
+  margin: 30px;
+}
+
+.modal-toggle {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.toDayGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.team_logo {
+  width: 100px;
+  margin: 0 20px;
+}
+
+.toDayGame > div:hover {
+  transform: scale(1.1);
+}
+
+.toDayGame > div {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.toDayGame span {
+  color: blue;
+}
+
+/* 페이드인 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
