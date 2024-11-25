@@ -269,3 +269,49 @@ footer .logo {
     opacity: 1;
   }
 }
+
+/* 메인페이지 -> ranking 영역 */
+input[name="top5"] {
+  display: none;
+}
+
+.ranking {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ranking_menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ranking_menu div {
+  margin: 0 10px;
+}
+
+.ranking_menu div label {
+  padding: 5px;
+  color: gray;
+  cursor: pointer;
+}
+
+.ranking_menu div label:hover {
+  padding: 5px;
+  color: black;
+}
+
+.ranking_top5 {
+  margin-top: 30px;
+  display: none;
+}
+
+#나이트투수label:checked ~ #나이트투수,
+#나이트타자label:checked ~ #나이트타자,
+#주말투수label:checked ~ #주말투수,
+#주말타자label:checked ~ #주말타자,
+#새벽투수label:checked ~ #새벽투수,
+#새벽타자label:checked ~ #새벽타자 {
+  display: block;
+}
